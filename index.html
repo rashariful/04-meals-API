@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <!--============== Tailwind CDN =============-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!--============== Food Section Desing =============-->
+        <section>
+            <div id="serch-box" class="text-center my-16 ">
+                <input id="search-feild" type="text" placeholder="Serch Your Food" class="w-96 p-2 pl-10 text-sm text-rose-800 bg-gray-50 rounded-lg border border-rose-800 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <button onclick="searchFood()" id="search-btn" class="bg-rose-800 px-8 text-white rounded-lg p-2 "> Search</button>
+                
+            </div>
+
+    </section>
+    <!--============== Food Section Desing =============-->
+        <section class="">
+           <div id="text-box">
+            <h1 class="text-center text-4xl font-bold text-rose-500 my-5">Some of Food for you!</h1>
+            <p class="text-center mb-20 w-1/2 mx-auto">Confused by all the conflicting nutrition advice out there? These simple tips
+                can show you how to plan, enjoy, and stick
+                to a healthy diet.</p>
+           </div>
+            <div id="meal-container" class="grid grid-cols-3 gap-4 justify-items-center">  </div>
+        </section>
+    </main>
+
+
+    <!--============== Javascript Files Here =============-->
+    <script src="js/meal.js"></script>
+</body>
+
+</html>
